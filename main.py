@@ -7,10 +7,10 @@ pdfFileObj = open(file, 'rb')
 pdfeader = PyPDF2.PdfFileReader(pdfFileObj)
 pages = pdfeader.numPages
 language = 'en'
-start = input('Enter the starting page no.: ') - 1
+# start = input('Enter the starting page no. - 1  Eg - if pg 4 enter 3 : ')
 
 with pdfplumber.open(file) as pdf:
-    for i in range(start, pages):
+    for i in range(0, pages):
         page = pdf.pages[i]
         text = page.extract_text()
         print(text)
