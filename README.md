@@ -7,7 +7,7 @@ This project extracts the text from the pdf and created a audiobook of it. It us
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install gtts, PyPDF2 and pdfplumber.
 
 ```bash
-pip install gtts pyPDF2 
+pip install gtts pyPDF2 pdfplumber 
 ```
 
 ## Usage
